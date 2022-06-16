@@ -12,13 +12,13 @@ function sh2_31w_enqueue()
 
     wp_enqueue_style(
         "sh2_31w_css",
-        plugin_dir_url(__FILE__, "/style.css"),
+        plugin_dir_url(__FILE__) . "style.css",
         array(),
         $version_css
     );
     wp_enqueue_script(
         "sh2_31w_js",
-        plugin_dir_url(__FILE__, "/script/message.js"),
+        plugin_dir_url(__FILE__) .  "script/message.js",
         array(),
         $version_js,
         true
@@ -37,5 +37,5 @@ function genere_adresse (){
             
  return $contenu;
 }
-
+ 
 add_shortcode('adr', 'genere_adresse');
