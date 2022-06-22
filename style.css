@@ -29,4 +29,17 @@
   top: 1rem;
   right: 1rem;
 }
+
+.code__adresse__modale {
+  margin: 0;
+  padding: 1rem;
+  background-color: transparent;
+  height: 100%;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  color: #c7c7c7;
+}
 /*# sourceMappingURL=style.css.map */
