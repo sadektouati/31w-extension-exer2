@@ -23,6 +23,9 @@
 }
 
 .boite__x {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 2rem;
   height: 2rem;
   position: absolute;
@@ -35,6 +38,7 @@
 }
 
 .code__adresse__modale {
+  box-sizing: border-box;
   margin: 0;
   padding: 1rem;
   background-color: transparent;
