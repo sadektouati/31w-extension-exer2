@@ -6,7 +6,7 @@
         let html = `
         <div class=boite__modale>
         <bouton class=boite__x>X</bouton>
-            <div class=code__adresse>
+            <div class=code__adresse_modale>
             ${elmCode__adresse.textContent}
             </div>
         </div>
