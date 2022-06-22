@@ -1,22 +1,23 @@
 (function(){
 
-    let elmBoite__modale, elmBoite__x;
-
-    function creer_boite_modale(){
-    elmBoite__modale = document.createElement("div");    
-    elmBoite__modale.classList.add("boite__modale");
-
-    elmBoite__x = document.createElement("button");
-    elmBoite__x.textContent = "X";
-    elmBoite__x.classList.add("boite__x")
-
-    elmBoite__modale.appendChild(elmBoite__x)
+    let elmCode__adresse = document.querySelector('.code__adresse');
+    
+        let html = `
+        <div class=boite__modale>
+        <bouton class=boite__x>X</bouton>
+            <div class=code__adresse>
+            ${elmCode__adresse.textContent}
+            </div>
+        </div>
+        `;
     let elmBody = document.querySelector("body");
-    elmBody.appendChild(elmBoite__modale);
-    }
-    creer_boite_modale();
+    elmBody.insertAdjacentHTML('afterbegin', html);
 
+
+    let elmBoite__modale = document.querySelector('.boite__modale');
     let elmOK = document.querySelector('#mon_bouton');
+    elmBoite__x = document.querySelector('.boite__x');
+
     elmOK.addEventListener('mousedown',  function(){
         elmBoite__modale.classList.add("boite__modale__ouvrir")
     })
