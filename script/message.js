@@ -1,6 +1,7 @@
 (function(){
 
-    let elmCode__adresse = document.querySelector('.code__adresse');
+    function creeElement(){
+        let elmCode__adresse = document.querySelector('.code__adresse');
     
         let html = `
         <div class=boite__modale>
@@ -12,7 +13,9 @@
         `;
     let elmBody = document.querySelector("body");
     elmBody.insertAdjacentHTML('afterbegin', html);
+    }
 
+    creeElement();
 
     let elmBoite__modale = document.querySelector('.boite__modale');
     let elmOK = document.querySelector('#mon_bouton');
