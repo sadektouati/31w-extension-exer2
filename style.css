@@ -28,6 +28,9 @@
   position: absolute;
   top: 1rem;
   right: 1rem;
+  color: white;
+  font-weight: bold;
+  font-family: arial;
 }
 
 .code__adresse__modale {
